@@ -1,0 +1,42 @@
+<style>
+    .slide-verify-wrapper{
+        position: relative;
+    }
+    .slide-verify-groove{
+        width: 100%;
+        height: 40px;
+        border: #ebebeb solid thin;
+        box-sizing: border-box;
+    }
+    .slide-verify-bar{
+        width: 34px;
+        height: 34px;
+        margin: 2px;
+        border-radius: 2px;
+        cursor: move;
+        background: #d0d0d0;
+        position: relative
+    }
+    .slide-verify-bar::after{
+        content: ' ';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background:
+                radial-gradient(circle at 30% 30%, #e9e9e9 2px, transparent 3px),
+                radial-gradient(circle at 50% 30%, #e9e9e9 2px, transparent 3px),
+                radial-gradient(circle at 70% 30%, #e9e9e9 2px, transparent 3px),
+                radial-gradient(circle at 30% 50%, #e9e9e9 2px, transparent 3px),
+                radial-gradient(circle at 50% 50%, #e9e9e9 2px, transparent 3px),
+                radial-gradient(circle at 70% 50%, #e9e9e9 2px, transparent 3px),
+                radial-gradient(circle at 30% 70%, #e9e9e9 2px, transparent 3px),
+                radial-gradient(circle at 50% 70%, #e9e9e9 2px, transparent 3px),
+                radial-gradient(circle at 70% 70%, #e9e9e9 2px, transparent 3px);
+    }
+</style>
+<div class="slide-verify-wrapper">
+    <canvas></canvas>
+    <div class="slide-verify-groove">
+        <div class="slide-verify-bar"></div>
+    </div>
+</div>
